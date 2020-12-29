@@ -1,103 +1,134 @@
-'use strict'; // use strict mode to prevent doing mistakes 
-
-//var stringVar = 'lets write some text'; // variable type string
-//var numberVar = 12; // variable type number
-//var floatNumberVar = 12.5 // number variable of type float
-//var booleanVarTrue = true; // boolean variable
-//var booleanVarFalse = false; // boolean variable 
-
-
-// this is not right
-// it will not work in strict mode
-// wrongWay = 'whatever ...';
-
-// the correct way
-//var correctWay = 'This is correct'; // initialize the var
-//correctWay = 'New value'; // reassignment of the value 
-// console.log(correctWay);
 alert("hello world");
 
-
-// var userFeeling = prompt('How are you feeling today? (good/not good)');
-//console.log(userFeeling);
-// console.log(userFeeling.toLowerCase());
-//console.log(userFeeling.toUpperCase());
+ var name = prompt("what is yuor name ?")
+     alert("Hello " + name)
 
 
-// if answer is good
-    // alert that we are glad you are feeling good
-// else 
-    // we want to ask the user why they are not feeling good
+ var userInput = prompt('how are you feeling today');
+ 
+ switch (userInput) { 
+     
+     case 'good':
+     case 'great':
+     case 'fine':
+         alert('Okay thats great');
+         break;
+     case 'not good':
+         alert('Its okay :( it will get better :)');
+         break;
+   
+     
+ }
+var x = 0;
 
- //if(userFeeling.toLowerCase() === 'good'){
-  //   alert('we are glad you are feeling good :)');
- //} else if(userFeeling.toLocaleLowerCase() === 'not good'){
-    // var why= prompt('Why arent you feeling good? :( (my team lost/ i ran out of pepsi)');
-     // nested condition
-   //  if(why.toLowerCase() === 'my team lost'){
-  //       alert(' dont worry, they might win next time :)')
-  //   } else if (why.toLowerCase() ==='i ran out of pepsi'){
-   //      alert('its okay, it actually not good for you ;)')
- //    }
-// } else {
-//    alert("please refresh the page and choose one of the correct answers") 
- //}
+var userInput = prompt("what do you think , what is my name ? ");
+console.log(userInput);
+if(userInput.toLowerCase() === 'ahmad'){
+    alert('correct ');
+    x++;
 
+ } else {
+     alert('incorrect :(');
+ }
+ 
 
-//var userInput = prompt("How are you feeling today (true, false)");
-
-//if(userInput.toLowerCase() === 'true'){
- //    alert('Great :)');
-// } else {
-  //   alert('ok :(');
-// }
-
-// var userInput = confirm("How are you feeling today?"); // only takes boolean values (true/ false)
-// console.log(userInput);
-// if(userInput){
-//     alert('Great :)');
-// } else {
-//     alert('ok :(');
-// }
-var name = prompt("what is yuor name ?")
-alert("Hello  " + name)
-var foode = prompt("Where are you from ?")
-alert("welcome my frind")
-var age = prompt("how old are you ?")
-alert("long live ameen")
-var foode = prompt("what is your Favorite foode ?")
-alert("excellent choice")
+ var workExp = prompt("do you think that i have work experience ?"); 
+    console.log(workExp);
+  if(workExp === 'true'){
+      alert('incorrect, no i don’t have :(');
+      x++;
+  } else {
+      alert('unfortunately correct :(');
+  }
 
 
-var userInput = prompt('how are you feeling today');
-// var userInput = confirm('yes or no?');
 
-switch (userInput) { 
+
+var team = prompt("do you think (AC milan) is my favorite football team ? (yes or no)"); 
+ console.log(team);
+  if(team === 'yes'){
+     alert('correct :)');
+     x++;
+ } else {
+     alert('incorrect :(');
+ }
+
+ var food = prompt("do you think mansaf is my favorite food ? (yes or no)"); 
+ console.log(food);
+  if(food === 'yes'){
+     alert('correct :)');
+     x++;
+ } else {
+     alert('incorrect :(');
+ }
+
+
+
+ for(var j=0 ; j<4 ;j++){
+
+    var age = prompt("what do you think , How old i am ?"); 
+    console.log(age);
+
+  if(age === '23'){
+     alert('correct :)');
+     x++;
+     x++;
+     break
+ }else { }
+  if(age < '23'){
+    alert('is not true , i’am older , do i look youngre than 23 years old ?');
+ }else { }
+   
+  if(age > '23'){
+    alert('is not true , i’am younger , do i look older than 23 years old ?');
+ }else { }
     
-    case 'good':
-    case 'great':
-    case 'fine':
-        alert('Okay thats great');
-        break;
-    case 'not good':
-        alert('Its okay :( it will get better :)');
-        break;
-    case 'my team lost':
-        alert('dont worry they might win next time');
-        break;
-    case 'bye bye':
-        alert('okay bye');
-        break;
-    case 12:
-        alert('its a number');
-        break;
-    case true:
-        alert('its true');
-        break;
-    case false:
-        alert('its false');
-        break;
-    default:
-        break;
+ }
+  if(age !== '23'){
+      alert("well you had 4 attempts to find out my age , iam 23 years old")
+  }
+   
+   
+    for(var i=0 ; i<6 ;i++){
+        var carsArray =['volvo',"bmw","ford","mazda","mercedes"];
+          console.log(carsArray);
+        var carsIn = prompt("What do you think are the best cars in the world? Give me one of them");
+          console.log(carsIn);
+        
+    for(var j=0 ;j<6;j++){
     
-}
+      if(carsIn === carsArray[j]){
+         alert('Yes, it is true, it is one of the best cars in the world :)');
+        var i=7;
+        x++;
+        x++;
+        break;
+    }        
+}       
+}  
+     if(carsIn !== carsArray[j]){  
+         alert("well you had 6 attempts.There are many good cars in the world, but there are some cars that have high performance, such as:(volvo,bmw,ford,mazda,mercedes) ")
+     }
+
+
+
+alert("your score of 7 is : "+ x )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
