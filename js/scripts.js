@@ -19,16 +19,24 @@ alert("hello world");
    
      
  }
+  function correctAns(){
+      alert('correct ');
+  }
+  function falseAns(){
+    alert('incorrect ');
+}
+
 var x = 0;
 
 var userInput = prompt("what do you think , what is my name ? ");
 console.log(userInput);
 if(userInput.toLowerCase() === 'ahmad'){
-    alert('correct ');
+    correctAns() ;
+
     x++;
 
  } else {
-     alert('incorrect :(');
+    falseAns();
  }
  
 
@@ -40,27 +48,39 @@ if(userInput.toLowerCase() === 'ahmad'){
   } else {
       alert('unfortunately correct :(');
   }
+function teamQ(){
+    if(team === 'yes'){
+        correctAns() ;
+    
+         x++;
+     } else {
+        falseAns();
+     }
+    
 
-
-
+}
 
 var team = prompt("do you think (AC milan) is my favorite football team ? (yes or no)"); 
+teamQ();
  console.log(team);
-  if(team === 'yes'){
-     alert('correct :)');
-     x++;
- } else {
-     alert('incorrect :(');
- }
 
- var food = prompt("do you think mansaf is my favorite food ? (yes or no)"); 
+  
+ 
+function foodQ(){
+    if(food === 'yes'){
+        correctAns() ;
+    
+         x++;
+     } else {
+        falseAns();
+     }
+
+
+}
+var food = prompt("do you think mansaf is my favorite food ? (yes or no)"); 
+ foodQ();
  console.log(food);
-  if(food === 'yes'){
-     alert('correct :)');
-     x++;
- } else {
-     alert('incorrect :(');
- }
+  
 
 
 
@@ -70,7 +90,8 @@ var team = prompt("do you think (AC milan) is my favorite football team ? (yes o
     console.log(age);
 
   if(age === '23'){
-     alert('correct :)');
+    correctAns() ;
+
      x++;
      x++;
      break
