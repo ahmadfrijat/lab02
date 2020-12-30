@@ -42,12 +42,14 @@ if(userInput.toLowerCase() === 'ahmad'){
 
  var workExp = prompt("do you think that i have work experience ?"); 
     console.log(workExp);
-  if(workExp === 'true'){
+  if(workExp === 'yes'){
       alert('incorrect, no i don’t have :(');
       x++;
   } else {
       alert('unfortunately correct :(');
   }
+
+
 function teamQ(){
     if(team === 'yes'){
         correctAns() ;
